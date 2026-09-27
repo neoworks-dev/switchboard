@@ -1,0 +1,9 @@
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
+
+# capture-proxy output — contains account ids and email.
+/captures/
+
+/node_modules/
+# `bun run build`
+/dist/

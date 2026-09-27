@@ -1,0 +1,15 @@
+{
+  // `bun run build`: JS and declarations into dist/, for consumers that can't run
+  // TypeScript from node_modules (Node refuses to strip types there) or type-check it.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"],
+    "rewriteRelativeImportExtensions": true
+  },
+  "include": ["src"]
+}
